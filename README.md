@@ -1,16 +1,26 @@
-## Hi there 👋
+# 👋 Halo, saya Nizham
 
-<!--
-**zimzamid/zimzamid** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+🎓 Siswa SMPN 6 Maja  
+🏆 Ranking 1 (kelas 7–9)  
+💻 Calon siswa TKJ  
+🇯🇵 Target kerja di Jepang  
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🚀 Skill yang sedang dipelajari
+- Networking dasar
+- HTML & Website
+- Video Editing
+
+---
+
+## 📂 Project Saya
+🔗 Website Portofolio (coming soon)  
+🎬 YouTube Video (coming soon)  
+
+---
+
+## 🎯 Target
+- Masuk TKJ SMKN 1 Rangkasbitung
+- Kuasai IT Networking
+- Kerja di Jepang
