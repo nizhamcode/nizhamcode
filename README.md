@@ -79,3 +79,39 @@
 ## ⚡ Quote
 
 > "Start small. Stay consistent. Become unstoppable."
+
+---
+
+## 🇯🇵 自己紹介 (Self Introduction)
+
+こんにちは、アブドゥラ・ニザムです。
+
+- 🎓 中学生（SMPN 6 Maja）
+- 🏆 クラスで1位（3年間）
+- 💻 将来はネットワークエンジニア
+- 🎬 動画編集を勉強中
+- 🇯🇵 日本で働くことが目標
+
+---
+
+## 🚀 スキル (Skills)
+
+- HTML・CSS
+- ネットワーク基礎
+- 動画編集
+
+---
+
+## 🎯 目標 (Goals)
+
+- TKJ（ネットワーク専攻）に進学
+- ITスキルを伸ばす
+- 日本語（N5 → N4）
+- 日本で働く 🇯🇵
+
+---
+
+## 📫 連絡先 (Contact)
+
+- Email: zimzam.id@gmail.com
+- WhatsApp: 08881010901
