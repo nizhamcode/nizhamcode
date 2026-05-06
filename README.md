@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="nizhamcode.png" width="100%" alt="Nizham Code Banner"/>
+  <img src="nizhamcode.webp" width="100%" alt="Nizham Code Banner"/>
 </p>
 
 <h1 align="center">
