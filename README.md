@@ -88,7 +88,7 @@
 ## 📫 Contact
 
 - 📧 Email: nizh4m.id@gmail.com  
-- 📱 WhatsApp: 08881010901  
+- 📧 Email: zimzam.id@gmail.com    
 
 ---
 
@@ -130,4 +130,4 @@
 ## 📫 連絡先 (Contact)
 
 - Email: nizh4m.id@gmail.com  
-- WhatsApp: 08881010901  
+- Email: zimzam.id@gmail.com  
