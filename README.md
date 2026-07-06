@@ -44,8 +44,6 @@ Goal        : Network Engineer | Full Stack Developer | Japan 🇯🇵
 - 🥇 Overall Champion (Rank 1) – Grade 7–9
 - 🧮 Mathematics Olympiad (OSN) School Selection
 - 👨‍🏫 Class Leader
-- 🏫 OSIS Management
-- 🏕️ Scout Jamboree Participant
 - 🎓 Accepted to SMKN 1 Rangkasbitung (TJKT)
 
 ---
