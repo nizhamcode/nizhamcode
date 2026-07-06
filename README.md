@@ -1,133 +1,173 @@
-
 <p align="center">
-  <img src="nizhamcode.webp" width="100%" height="220" style="object-fit: cover;" alt="Nizham Code Banner"/>
+  <img src="nizhamcode.webp" width="100%" height="220" alt="Nizham Code Banner"/>
 </p>
 
 <h1 align="center">
-  Assalamu'alaikum 👋 Hi, I'm Abdullah Nizham Alfakhri
+Assalamu'alaikum 👋 Hi, I'm Abdullah Nizham Alfakhri
 </h1>
 
 <h3 align="center">
-  🧠 Math Enthusiast | 💻 Future Tech Innovator | 🇯🇵 Japan Dream
+🎓 TJKT Student • 🌐 Future Network Engineer • 💻 Web Developer • 🇯🇵 Road to Japan
 </h3>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?lines=Top+Student+Rank+1;Math+Olympiad+Journey;Future+Muslim+Scientist;Learning+Programming+%26+Tech&center=true&width=520&height=45">
+  <img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=24&pause=1200&color=00C4FF&center=true&vCenter=true&width=750&lines=Welcome+to+NizhamCode!;TJKT+Student+at+SMKN+1+Rangkasbitung;Learning+Networking+%26+Programming;Building+Projects+Every+Week;Dreaming+Big+%E2%80%A2+Working+Hard+%E2%80%A2+Japan+%F0%9F%87%AF%F0%9F%87%B5" />
 </p>
 
 ---
 
-## 🧠 About Me | Tentang Saya
+# 👨‍💻 About Me
 
-- 🎓 Student of SMPN 6 Maja  
-- 🏆 Rank 1 (Grade 7–9)  
-- 📊 Math Olympiad Candidate (OSN)  
-- 👨‍🏫 Class Leader & OSIS Member  
-- 💻 Learning Programming & Technology  
-- 🇯🇵 Dream: Study / Work in Japan  
+```yaml
+Name        : Abdullah Nizham Alfakhri
+School      : SMKN 1 Rangkasbitung
+Major       : Teknik Jaringan Komputer dan Telekomunikasi (TJKT)
+Country     : Indonesia 🇮🇩
+Goal        : Network Engineer | Full Stack Developer | Japan 🇯🇵
+```
 
----
+### 🚀 Currently Learning
 
-## 🚀 Skills in Progress
-
-<p>
-  <img src="https://img.shields.io/badge/Mathematics-blue?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Problem%20Solving-green?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Leadership-orange?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Web%20Development-red?style=for-the-badge"/>
-</p>
-
----
-
-## 🏆 Achievements
-
-- 🥇 Overall Champion (Grade 7, 8, 9)  
-- 📊 OSN Mathematics Selection Participant  
-- 🎖️ OSIS Management  
-- 👨‍🏫 Class Leader & Assistant Teacher  
-- 🏕️ Scout Jamboree Participant  
+- 🌐 HTML5
+- 🎨 CSS3
+- ⚡ JavaScript
+- 🐧 Linux
+- 🌍 Computer Networking
+- 🔧 Git & GitHub
+- 🇬🇧 English
+- 🇯🇵 Japanese (JLPT N5)
 
 ---
 
-## 📂 Projects
+# 🏆 Achievements
 
-- 🌐 Portfolio Website → (coming soon)  
-- 💻 Programming Projects → (coming soon)  
-- 📊 Math Notes & Learning → (coming soon)  
+- 🥇 Overall Champion (Rank 1) – Grade 7–9
+- 🧮 Mathematics Olympiad (OSN) School Selection
+- 👨‍🏫 Class Leader
+- 🏫 OSIS Management
+- 🏕️ Scout Jamboree Participant
+- 🎓 Accepted to SMKN 1 Rangkasbitung (TJKT)
 
 ---
 
-## 📊 GitHub Stats
+# 💻 Tech Stack
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=nizhamcode&show_icons=true&theme=tokyonight"/>
-  <br/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=nizhamcode&theme=tokyonight"/>
+
+<img src="https://skillicons.dev/icons?i=html,css,js,git,github,vscode,linux,windows" />
+
 </p>
 
 ---
 
-## 🎯 Goals 2026
+# 📂 Featured Projects
 
-- 🎓 Enter top high school (TKJ / Technology major)  
-- 📊 Join higher level Math Olympiad  
-- 💻 Build real tech projects  
-- 🇯🇵 Prepare study/work path to Japan  
-
----
-
-## 🌍 Road to Japan
-
-- 📘 Learn Japanese (N5 → N4)  
-- 💻 Develop tech & math skills  
-- 🎓 Join competitions & training  
-- ✈️ Study / Work in Japan  
+| Project | Description | Status |
+|---------|-------------|--------|
+| 🌐 Portfolio Website | Personal Portfolio | ✅ Active |
+| 💻 HTML & CSS Notes | Learning Repository | 🚧 |
+| 🌍 Networking Notes | CCNA & Networking Journey | 🚧 |
+| 🐧 Linux Notes | Linux Learning Journey | 🚧 |
+| 🇯🇵 Road To Japan | Japanese Learning Progress | 🚧 |
 
 ---
 
-## 📫 Contact
+# 📈 GitHub Statistics
 
-- 📧 Email: nizh4m.id@gmail.com  
-- 📧 Email: zimzam.id@gmail.com    
+<p align="center">
 
----
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=nizhamcode&show_icons=true&theme=tokyonight"/>
 
-## ⚡ Quote
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nizhamcode&layout=compact&theme=tokyonight"/>
 
-> "Discipline today, success tomorrow."
+</p>
 
----
+<p align="center">
 
-## 🇯🇵 自己紹介 (Self Introduction)
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=nizhamcode&theme=tokyonight"/>
 
-こんにちは、アブドゥラ・ニザムです。
-
-- 🎓 SMPN 6 Maja の学生  
-- 🏆 3年間クラス1位  
-- 📊 数学が大好き（オリンピック志望）  
-- 💻 テクノロジーを勉強中  
-- 🇯🇵 将来は日本で勉強・仕事したい  
+</p>
 
 ---
 
-## 🚀 スキル (Skills)
+# 🎯 2026 Goals
 
-- 数学・問題解決  
-- リーダーシップ  
-- プログラミング基礎  
-
----
-
-## 🎯 目標 (Goals)
-
-- 高校でIT専攻に進学  
-- 数学オリンピックに挑戦  
-- 日本語（N5 → N4）  
-- 日本で活躍する 🇯🇵  
+- ✅ Become a TJKT Student
+- ⬜ Build 20+ GitHub Projects
+- ⬜ Create Professional Portfolio Website
+- ⬜ Learn Linux Fundamentals
+- ⬜ Master Computer Networking Basics
+- ⬜ Earn First Tech Certificate
+- ⬜ Start Japanese (JLPT N5)
 
 ---
 
-## 📫 連絡先 (Contact)
+# 🛣️ Roadmap
 
-- Email: nizh4m.id@gmail.com  
-- Email: zimzam.id@gmail.com  
+```text
+2026  ██████████  Enter TJKT ✅
+
+2027  ███████░░░  HTML • CSS • JavaScript • Linux
+
+2028  █████░░░░░  Cisco • MikroTik • Portfolio
+
+2029  ███░░░░░░░  Internship • JLPT N5 • Graduation
+
+2030+ ██████████  Career / Study in Japan 🇯🇵
+```
+
+---
+
+# 🌍 Connect With Me
+
+📧 **Email**
+
+- zimzam.id@gmail.com
+
+🌐 **Portfolio**
+
+- https://nizhamcode.github.io/portofolio-nizham/
+
+🐙 **GitHub**
+
+- https://github.com/nizhamcode
+
+---
+
+# 💡 Motto
+
+> **"Learn consistently. Build real projects. Share knowledge. Never stop growing."**
+
+---
+
+# 🇯🇵 自己紹介
+
+こんにちは！
+
+アブドゥラ・ニザム・アルファクリです。
+
+- 🎓 インドネシアのTJKT学生
+- 🌐 ネットワークエンジニアを目指しています
+- 💻 Web開発を勉強しています
+- 🇯🇵 日本語を勉強中（JLPT N5）
+- 🚀 将来は日本で働くことが目標です
+
+---
+
+# 🎯 My Mission
+
+> Build Skills 📚  
+> Build Projects 💻  
+> Build Character 🤝  
+> Build Future 🚀  
+> Build Opportunities in Japan 🇯🇵
+
+---
+
+<p align="center">
+
+⭐ Thanks for visiting my GitHub Profile ⭐
+
+**Let's Learn • Build • Grow Together 🚀**
+
+</p>
