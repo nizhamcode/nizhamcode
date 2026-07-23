@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="animebanner.gif" width="100%" height="220" alt="Nizham Code Banner"/>
+  <img src="animebanner.gif" width="100%" height="350" alt="Nizham Code Banner"/>
 </p>
 
 <h1 align="center">
