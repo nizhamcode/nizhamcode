@@ -2,99 +2,736 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Nizham Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>NizhamCode | IT & Network Portfolio</title>
+  <meta name="description" content="NizhamCode — portfolio IT, networking, web development, AI, dan teknologi digital.">
+  <meta name="author" content="NizhamCode">
+
   <style>
+    :root {
+      --bg: #020617;
+      --bg-soft: #0f172a;
+      --card: rgba(15, 23, 42, 0.82);
+      --border: rgba(148, 163, 184, 0.16);
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-2: #22d3ee;
+      --green: #34d399;
+      --purple: #a78bfa;
+      --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
-      font-family: Arial;
-      background: #0f172a;
-      color: white;
-    }
-
-    header {
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    h1 {
-      font-size: 40px;
-    }
-
-    .highlight {
-      color: #38bdf8;
-    }
-
-    section {
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      margin: 10px 0;
-      border-radius: 10px;
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at 15% 10%, rgba(56, 189, 248, 0.13), transparent 28%),
+        radial-gradient(circle at 85% 20%, rgba(167, 139, 250, 0.10), transparent 25%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.7;
     }
 
     a {
-      color: #38bdf8;
+      color: inherit;
       text-decoration: none;
+    }
+
+    .container {
+      width: min(1100px, calc(100% - 36px));
+      margin: auto;
+    }
+
+    /* NAVBAR */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(16px);
+      background: rgba(2, 6, 23, 0.78);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      font-weight: 800;
+      font-size: 20px;
+      letter-spacing: -0.5px;
+    }
+
+    .brand span {
+      color: var(--primary);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    /* HERO */
+    header {
+      min-height: 720px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      padding: 90px 20px;
+    }
+
+    .hero {
+      width: min(900px, 100%);
+      margin: auto;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 14px;
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      border-radius: 999px;
+      background: rgba(56, 189, 248, 0.08);
+      color: var(--primary);
+      font-size: 13px;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(44px, 8vw, 82px);
+      line-height: 1.02;
+      letter-spacing: -3px;
+    }
+
+    .highlight {
+      color: var(--primary);
+    }
+
+    .hero h2 {
+      margin: 22px 0 12px;
+      font-size: clamp(20px, 3vw, 30px);
+      color: #e2e8f0;
+      font-weight: 600;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .btn {
+      padding: 12px 20px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--bg-soft);
+      color: white;
+      font-weight: 700;
+      transition: 0.25s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      border-color: rgba(56, 189, 248, 0.5);
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #082f49;
+      border-color: var(--primary);
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 82px 0;
+    }
+
+    .section-title {
+      margin-bottom: 34px;
+    }
+
+    .section-title .eyebrow {
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .section-title h2 {
+      margin: 5px 0;
+      font-size: clamp(28px, 4vw, 42px);
+      letter-spacing: -1px;
+    }
+
+    .section-title p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      background: linear-gradient(
+        145deg,
+        rgba(15, 23, 42, 0.95),
+        rgba(15, 23, 42, 0.68)
+      );
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 26px;
+      box-shadow: var(--shadow);
+      transition: 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(56, 189, 248, 0.3);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 21px;
+    }
+
+    .card p {
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    /* SKILLS */
+    .skill-list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .skill {
+      padding: 22px 16px;
+      text-align: center;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    .skill-icon {
+      font-size: 28px;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .skill strong {
+      display: block;
+      font-size: 14px;
+    }
+
+    .skill small {
+      color: var(--muted);
+    }
+
+    /* PROJECT */
+    .project-card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .project-number {
+      color: var(--primary);
+      font-weight: 800;
+      font-size: 13px;
+    }
+
+    .project-card h3 {
+      margin: 8px 0;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 5px 9px;
+      margin: 8px 5px 0 0;
+      border-radius: 999px;
+      background: rgba(56, 189, 248, 0.08);
+      color: #bae6fd;
+      border: 1px solid rgba(56, 189, 248, 0.15);
+      font-size: 12px;
+    }
+
+    /* ROADMAP */
+    .roadmap {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+    }
+
+    .step {
+      text-align: center;
+      padding: 18px 12px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--card);
+    }
+
+    .step span {
+      font-size: 26px;
+      display: block;
+    }
+
+    .step strong {
+      font-size: 13px;
+    }
+
+    /* TARGET */
+    .target {
+      border: 1px solid rgba(52, 211, 153, 0.2);
+      background: linear-gradient(
+        135deg,
+        rgba(6, 78, 59, 0.35),
+        rgba(15, 23, 42, 0.8)
+      );
+    }
+
+    .target-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .target-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .target-item span {
+      color: var(--green);
+    }
+
+    /* CONTACT */
+    .contact {
+      text-align: center;
+    }
+
+    .contact-box {
+      max-width: 760px;
+      margin: auto;
+    }
+
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 30px 20px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 800px) {
+      .nav-links {
+        display: none;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .skill-list {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .roadmap {
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        min-height: 620px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        width: min(100% - 24px, 1100px);
+      }
+
+      section {
+        padding: 60px 0;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+
+      .skill-list {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .card {
+        padding: 21px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <h1>👋 Saya <span class="highlight">NizhamCode</span></h1>
-  <p>Future Network Engineer | 🇯🇵 Japan Dream</p>
-</header>
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="container nav-inner">
+      <a href="#home" class="brand">Nizham<span>Code</span></a>
 
-<section>
-  <h2>🧠 Tentang Saya</h2>
-  <div class="card">
-    Siswa SMPN 6 Maja, ranking 1 sejak kelas 7–9.
-    Sedang belajar IT, networking, dan video editing.
-  </div>
-</section>
+      <div class="nav-links">
+        <a href="#about">Tentang</a>
+        <a href="#skills">Skill</a>
+        <a href="#projects">Project</a>
+        <a href="#target">Target</a>
+        <a href="#contact">Kontak</a>
+      </div>
+    </div>
+  </nav>
 
-<section>
-  <h2>🚀 Skill</h2>
-  <div class="card">HTML & CSS</div>
-  <div class="card">Networking Dasar</div>
-  <div class="card">Video Editing</div>
-</section>
+  <!-- HERO -->
+  <header id="home">
+    <div class="hero">
+      <div class="badge">● Open to Learning • Building • Improving</div>
 
-<section>
-  <h2>📂 Project</h2>
-  <div class="card">
-    Website Portofolio → (coming soon)
-  </div>
-  <div class="card">
-    YouTube Editing → (coming soon)
-  </div>
-</section>
+      <h1>Hi, I'm <span class="highlight">NizhamCode</span> 👋</h1>
 
-<section>
-  <h2>🇯🇵 Target Jepang</h2>
-  <div class="card">
-    Belajar bahasa Jepang (N5 → N4)  
-    Masuk jurusan TKJ  
-    Bekerja di Jepang di bidang IT  
-  </div>
-</section>
+      <h2>
+        Future Network Engineer • IT Enthusiast • Technology Builder
+      </h2>
 
-<section>
-  <h2>📫 Kontak</h2>
-  <div class="card">
-    Email: zimzam.id@gmail.com <br>
-    
-    GitHub: <a href="https://github.com/nizhamcode">github.com/nizhamcode</a>
-  </div>
-</section>
+      <p>
+        Belajar dan membangun project di bidang
+        <strong>Networking, Web Development, Artificial Intelligence,
+        dan teknologi digital</strong>.
+      </p>
+
+      <div class="buttons">
+        <a class="btn btn-primary" href="https://github.com/nizhamcode" target="_blank">
+          ⭐ GitHub
+        </a>
+
+        <a class="btn" href="#projects">
+          🚀 Lihat Project
+        </a>
+
+        <a class="btn" href="#contact">
+          📫 Kontak
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="section-title">
+          <div class="eyebrow">01 — About</div>
+          <h2>🧠 Tentang Saya</h2>
+          <p>Perjalanan belajar dari fundamental menuju teknologi yang lebih kompleks.</p>
+        </div>
+
+        <div class="card">
+          <p>
+            Saya adalah pelajar yang memiliki ketertarikan besar pada dunia
+            <strong>IT, networking, web development, AI, dan teknologi digital</strong>.
+            Saya senang belajar melalui praktik, membuat project, mencoba teknologi baru,
+            dan mendokumentasikan hasilnya.
+          </p>
+
+          <p>
+            Saya juga memiliki pengalaman belajar dan berprestasi secara akademik
+            sejak kelas 7–9 di SMPN 6 Maja. Saat ini fokus mengembangkan kemampuan
+            teknis sebagai persiapan menuju bidang <strong>TKJ / jaringan komputer
+            dan IT</strong>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-title">
+          <div class="eyebrow">02 — Skills</div>
+          <h2>🛠️ Technology Stack</h2>
+          <p>Skill yang sedang dipelajari dan terus dikembangkan.</p>
+        </div>
+
+        <div class="skill-list">
+          <div class="skill">
+            <span class="skill-icon">🌐</span>
+            <strong>HTML & CSS</strong>
+            <small>Web Development</small>
+          </div>
+
+          <div class="skill">
+            <span class="skill-icon">⚡</span>
+            <strong>JavaScript</strong>
+            <small>Interactive Web</small>
+          </div>
+
+          <div class="skill">
+            <span class="skill-icon">🐍</span>
+            <strong>Python</strong>
+            <small>Programming & AI</small>
+          </div>
+
+          <div class="skill">
+            <span class="skill-icon">🌐</span>
+            <strong>Networking</strong>
+            <small>TKJ Fundamentals</small>
+          </div>
+
+          <div class="skill">
+            <span class="skill-icon">🤖</span>
+            <strong>Artificial Intelligence</strong>
+            <small>AI Fundamentals</small>
+          </div>
+
+          <div class="skill">
+            <span class="skill-icon">✍️</span>
+            <strong>Prompt Engineering</strong>
+            <small>Generative AI</small>
+          </div>
+
+          <div class="skill">
+            <span class="skill-icon">🎬</span>
+            <strong>Video Editing</strong>
+            <small>Creative Content</small>
+          </div>
+
+          <div class="skill">
+            <span class="skill-icon">🐙</span>
+            <strong>Git & GitHub</strong>
+            <small>Version Control</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-title">
+          <div class="eyebrow">03 — Projects</div>
+          <h2>🚀 Project Direction</h2>
+          <p>Project yang sedang dibangun, dikembangkan, atau menjadi target portfolio.</p>
+        </div>
+
+        <div class="grid">
+
+          <div class="card project-card">
+            <div class="project-number">PROJECT 01</div>
+            <h3>🌐 Web Portfolio</h3>
+            <p>
+              Website portfolio untuk menampilkan perjalanan belajar,
+              skill, project, dan perkembangan teknologi.
+            </p>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+
+          <div class="card project-card">
+            <div class="project-number">PROJECT 02</div>
+            <h3>🌐 Networking Lab</h3>
+            <p>
+              Eksperimen dan pembelajaran fundamental jaringan komputer,
+              IP addressing, perangkat jaringan, dan konsep TKJ.
+            </p>
+            <span class="tag">Networking</span>
+            <span class="tag">TKJ</span>
+            <span class="tag">Computer Network</span>
+          </div>
+
+          <div class="card project-card">
+            <div class="project-number">PROJECT 03</div>
+            <h3>🤖 AI Learning Project</h3>
+            <p>
+              Eksperimen penggunaan Artificial Intelligence dan
+              Prompt Engineering untuk pembelajaran dan produktivitas.
+            </p>
+            <span class="tag">AI</span>
+            <span class="tag">Prompt Engineering</span>
+            <span class="tag">Education</span>
+          </div>
+
+          <div class="card project-card">
+            <div class="project-number">PROJECT 04</div>
+            <h3>🎬 Digital Content</h3>
+            <p>
+              Eksplorasi video editing dan produksi konten digital
+              sebagai bagian dari skill kreatif teknologi.
+            </p>
+            <span class="tag">Video Editing</span>
+            <span class="tag">Creative</span>
+            <span class="tag">Digital Content</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- DEVELOPMENT FLOW -->
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <div class="eyebrow">04 — Workflow</div>
+          <h2>🏗️ Cara Saya Belajar & Membangun</h2>
+          <p>Teknologi dipelajari melalui proses praktik yang berkelanjutan.</p>
+        </div>
+
+        <div class="roadmap">
+          <div class="step">
+            <span>💡</span>
+            <strong>IDEA</strong>
+          </div>
+
+          <div class="step">
+            <span>📚</span>
+            <strong>LEARN</strong>
+          </div>
+
+          <div class="step">
+            <span>💻</span>
+            <strong>BUILD</strong>
+          </div>
+
+          <div class="step">
+            <span>🧪</span>
+            <strong>TEST</strong>
+          </div>
+
+          <div class="step">
+            <span>🚀</span>
+            <strong>IMPROVE</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TARGET -->
+    <section id="target">
+      <div class="container">
+        <div class="section-title">
+          <div class="eyebrow">05 — Future</div>
+          <h2>🇯🇵 Target & Roadmap</h2>
+          <p>Membangun kemampuan sedikit demi sedikit untuk target jangka panjang.</p>
+        </div>
+
+        <div class="card target">
+          <h3>🎯 Japan IT Dream</h3>
+
+          <div class="target-list">
+            <div class="target-item">
+              <span>✓</span>
+              <div>Memperkuat fundamental komputer dan networking.</div>
+            </div>
+
+            <div class="target-item">
+              <span>✓</span>
+              <div>Masuk dan berkembang di bidang TKJ / jaringan komputer.</div>
+            </div>
+
+            <div class="target-item">
+              <span>✓</span>
+              <div>Belajar bahasa Jepang dari N5 menuju N4 dan seterusnya.</div>
+            </div>
+
+            <div class="target-item">
+              <span>✓</span>
+              <div>Membangun portfolio IT melalui project nyata.</div>
+            </div>
+
+            <div class="target-item">
+              <span>✓</span>
+              <div>Memiliki kemampuan profesional untuk berkarier di bidang IT, termasuk target bekerja di Jepang.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container contact">
+        <div class="contact-box">
+          <div class="section-title">
+            <div class="eyebrow">06 — Contact</div>
+            <h2>📫 Let's Connect</h2>
+            <p>
+              Terbuka untuk belajar, kolaborasi project, dan berbagi pengalaman teknologi.
+            </p>
+          </div>
+
+          <div class="contact-links">
+            <a class="btn btn-primary" href="mailto:zimzam.id@gmail.com">
+              ✉️ Email
+            </a>
+
+            <a
+              class="btn"
+              href="https://github.com/nizhamcode"
+              target="_blank"
+              rel="noopener"
+            >
+              🐙 GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div>
+      © 2026 <strong>NizhamCode</strong> • Build • Learn • Document • Improve
+    </div>
+  </footer>
 
 </body>
 </html>
